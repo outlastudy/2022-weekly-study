@@ -10,10 +10,11 @@
 
 - 생성(Creational)
 
-    - [ ] 1. 싱글톤 패턴(Singleton)
-    - [ ] 2. 빌더 패턴(Builder)
-    - [ ] 3. 추상 팩토리 패턴(Abstract Factory)
-    - [ ] 4. 팩토리 메서드 패턴(Factory Method)
+    - [ ] 싱글톤 패턴(Singleton)
+    - [ ] 추상 팩토리 패턴(Abstract Factory)
+    - [ ] 빌더 패턴(Builder)
+    - [ ] 팩토리 메서드 패턴(Factory Method)
+    - [ ] 원형 패턴(Prototype)
 
 - 구조(Structural)
 
