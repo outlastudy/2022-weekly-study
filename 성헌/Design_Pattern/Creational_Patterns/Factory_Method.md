@@ -11,6 +11,8 @@
 ## 팩토리 메서드 구조
 
 ![팩토리 메서드 구조](../assets/factory_method.png "팩토리 메서드 구조")
+팩토리 메서드 구조
+
 출처 : https://gmlwjd9405.github.io/2018/08/07/factory-method-pattern.html
 
 - Product
