@@ -18,21 +18,29 @@
 
 객체의 생성과 조합을 캡슐화하여 특정 객체가 생성되거나 변경되어도 프로그램 구조에 영향이 없게 유연성을 제공한다.
 
-- [싱글톤 패턴(Singleton)]()
+- [싱글톤 패턴(Singleton)](https://github.com/outlastudy/2022-weekly-study/blob/master/%EC%84%B1%ED%97%8C/Design_Pattern/Creational_Patterns/Singleton.md)
 
-- [추상팩토리 패턴(Abstract Factory)]()
+- [추상팩토리 패턴(Abstract Factory)](https://github.com/outlastudy/2022-weekly-study/blob/master/%EC%84%B1%ED%97%8C/Design_Pattern/Creational_Patterns/Abstract_Factory.md)
 
-- [빌더 패턴(Builder)]()
+- [빌더 패턴(Builder)](https://github.com/outlastudy/2022-weekly-study/blob/master/%EC%84%B1%ED%97%8C/Design_Pattern/Creational_Patterns/Builder.md)
 
-- [팩토리 메서드 패턴(Factory Method)]()
+- [팩토리 메서드 패턴(Factory Method)](https://github.com/outlastudy/2022-weekly-study/blob/master/%EC%84%B1%ED%97%8C/Design_Pattern/Creational_Patterns/Factory_Method.md)
 
-- [원형 패턴(Prototype)]()
+- [원형 패턴(Prototype)](https://github.com/outlastudy/2022-weekly-study/blob/master/%EC%84%B1%ED%97%8C/Design_Pattern/Creational_Patterns/Prototype.md)
 
 ### 구조 패턴(Structural Patterns)
 
 클래스나 객체를 조합하여 더 큰 구조로 만드는 패턴이다.
 
 서로 다른 인터페이스를 지닌 2개의 객체를 묶어 단일 인터페이스를 제공하거나 객체들을 서로 묶어 새로운 기능을 제공하는 패턴이다.
+
+- [어댑터 패턴(Adapter)](https://github.com/outlastudy/2022-weekly-study/blob/master/%EC%84%B1%ED%97%8C/Design_Pattern/Creational_Patterns/Adapter.md)
+
+- [컴포지트 패턴(Composite)](https://github.com/outlastudy/2022-weekly-study/blob/master/%EC%84%B1%ED%97%8C/Design_Pattern/Creational_Patterns/Composite.md)
+
+- [파사드 패턴(Facade)](https://github.com/outlastudy/2022-weekly-study/blob/master/%EC%84%B1%ED%97%8C/Design_Pattern/Creational_Patterns/Facade.md)
+
+- [프록시 패턴(Proxy)](https://github.com/outlastudy/2022-weekly-study/blob/master/%EC%84%B1%ED%97%8C/Design_Pattern/Creational_Patterns/Proxy.md)
 
 ### 행위 패턴(Behavioral Patterns)
 
