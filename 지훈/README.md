@@ -6,15 +6,24 @@
 
 ## 목록
 
-### [PoiemaWeb]((https://github.com/outlastudy/2022-weekly-study/blob/master/지훈/poiemaweb)) 
+### [PoiemaWeb](https://github.com/outlastudy/2022-weekly-study/tree/master/%EC%A7%80%ED%9B%88/PoiemaWeb)
 
 - HTML5
-    1. HTML5 기본 문법
-      2. 시멘틱 요소와 검색 엔진
-      3. 웹페이지의 구성하는 기본태그
-      4. 텍스트 관련 태그
-     
+  1. HTML5 기본 문법 [[바로가기](PoiemaWeb/HTML5%20기본%20문법.md)]
+  2. 시멘틱 요소와 검색 엔진
+  3. 웹페이지의 구성하는 기본태그
+  4. 텍스트 관련 태그
+  5. HTML의 핵심 개념인 Hyperlink
+  6. 목록(List)와 표(Table) 형식 표현을 위한 태그
+  7. 이미지의 표현과 동영상, 음악 등 멀티미디어를 지원하는 태그
+  8. 사용자와의 커뮤니케이션을 위한 폼 태그
+  9. 웹페이지의 레이아웃을 구성하기 위해 공간을 분할하는 태그
 
 - CSS3
 
-- 행위(Behavioral)
+- Javascript
+
+### [TIL](https://github.com/outlastudy/2022-weekly-study/tree/master/%EC%A7%80%ED%9B%88/TIL)
+ 
+ - SSR 과 CSR [[바로가기](TIL/SSR%20과%20CSR.md)]
+ - Rendering 과정
