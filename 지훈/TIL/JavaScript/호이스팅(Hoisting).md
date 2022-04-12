@@ -44,10 +44,10 @@ var value = 5;
 출력 결과
 
 ```
-undifined
+undefined
 ```
 
-ReferenceError 가 아닌 undifined 가 출력되는 것을 볼 수 있다. 호이스팅에 의해 아래와같이 코드가 인식되었기 때문이다.
+ReferenceError 가 아닌 undefined 가 출력되는 것을 볼 수 있다. 호이스팅에 의해 아래와같이 코드가 인식되었기 때문이다.
 
 ```js
 var value = undefined;
