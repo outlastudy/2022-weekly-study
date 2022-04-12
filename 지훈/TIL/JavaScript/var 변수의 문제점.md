@@ -63,7 +63,7 @@ function scopreTest() {
 ```js
 function scopreTest() {
   var arr = [];
-  var i = undifined;
+  var i = undefined;
   for (i = 0; i < 5; i++) {
     arr[i] = function () {
       console.log(i);
