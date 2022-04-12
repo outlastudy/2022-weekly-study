@@ -17,9 +17,9 @@
 
 ## 변수 호이스팅
 
-`var`는 호이스팅 되어 선언됨과 동시에 `undifined`로 초기화 되어서 scope 어디서든 참조가 가능하다.
+`var`는 호이스팅 되어 선언됨과 동시에 `undefined`로 초기화 되어서 scope 어디서든 참조가 가능하다.
 
-`let`과 `cosnt`에서도 호이스팅은 일어나지만 선언만 할뿐 초기화는 이루어지지않기 때문에 초기화 이후에 참조가능하다.
+`let`과 `const`에서도 호이스팅은 일어나지만 선언만 할뿐 초기화는 이루어지지않기 때문에 초기화 이후에 참조가능하다.
 
 아래의 예제를 통해 변수 호이스팅에 대해 알아보자.
 
@@ -50,12 +50,12 @@ undifined
 ReferenceError 가 아닌 undifined 가 출력되는 것을 볼 수 있다. 호이스팅에 의해 아래와같이 코드가 인식되었기 때문이다.
 
 ```js
-var value = undifined;
+var value = undefined;
 console.log(value);
 value = 5;
 ```
 
-선언은 되어있지만 초기화는 되어있지 않기 때문에 undifined가 나오는 것이다.
+선언은 되어있지만 초기화는 되어있지 않기 때문에 undefined 나오는 것이다.
 
 아래의 결과를 예측해보자
 
@@ -86,17 +86,17 @@ func();
 하지만 결과는
 
 ```
-undifined
+undefined
 456
 ```
 
 [정의](#정의)를 보면 이해할 수 있는데 위 코드가 호이스팅 되면 아래와 같이 인식된다.
 
 ```js
-var value = undifined;
+var value = undefined;
 value = 123;
 function func() {
-  var value = undifined;
+  var value = undefined;
   console.log(value);
   value = 456;
   console.log(value);
@@ -155,7 +155,7 @@ TypeError: "count" is not a function
 함수 표현식으로 되어있어 함수같아 보이지만 변수 `count` 에 담겨 있으므로 변수 호이스팅 규칙을 따른다 따라서 코드가 다음과 같이 인식된다
 
 ```js
-var count = undifiend;
+var count = undefined;
 
 count();
 
@@ -164,7 +164,7 @@ count = function () {
 };
 ```
 
-아래에 함수 초기화 부분을 만나기 전까지는 undifiend 변수 이므로 `count()`은 TypeError가 발생한다.
+아래에 함수 초기화 부분을 만나기 전까지는 undefined 변수 이므로 `count()`은 TypeError가 발생한다.
 
 ### 2. let, const 함수 표현식
 
