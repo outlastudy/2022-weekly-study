@@ -1,3 +1,5 @@
+# Java Exception
+
 ## 오류 Erorr
 
 - 시스템에 비정상적인 상황이 생겼을 때 발생
@@ -21,17 +23,8 @@
 | --- | --- | --- |
 | 처리 여부 | 반드시 예외를 처리해야 함 | 명시적인 처리를 강제하지 않음 |
 | 확인시점 | 컴파일 단계 | 실행단계 |
-| 예외발생시 
-트랜잭션 처리 | roll-back 하지 않음 | roll-back 함 |
-| 대표 예외 | Exception의 상속받는 하위 클래스 중 Runtime Exception을 제외한 모든 예외
-
-- IOException
-- SQLException | Runtime Exception 하위 예외
-
-- NullPointerException
-- IllegalArgumentException
-- IndexOutOfBoundException
-- SystemException |
+| 예외발생시 트랜잭션 처리 | roll-back 하지 않음 | roll-back 함 |
+| 대표 예외 | Exception의 상속받는 하위 클래스 중 Runtime Exception을 제외한 모든 예외 IOException SQLException | Runtime Exception 하위 예외 NullPointerException IllegalArgumentException IndexOutOfBoundException SystemException 
 
 ## 예외 복구
 
@@ -47,3 +40,4 @@
 
 - 예외를 잡아서 다른 예외로 던지는 것
 - 예외를 받은 곳에서 좀 더 정확한 에러를 알기 위해 사용
+
