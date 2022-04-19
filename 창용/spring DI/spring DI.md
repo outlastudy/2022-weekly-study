@@ -4,8 +4,7 @@
 
 스프링의 기반이 되는 설계 개념을 표현한 것.
 
-![Untitled]
-
+<img src="https://user-images.githubusercontent.com/51350374/163903321-b0650e7c-4d52-483b-8524-0cb28bd64f31.png" width="250" height="200"/>
 스프링이란 IoC와 AOP를 지원하는 경량의 컨테이너 프레임워크이다.
 
 **DI(Dependency Injection)**
@@ -49,7 +48,7 @@ public class BookService {
 - 추가적으로 BookService와 BookRepository가 둘다 Bean으로 등록되어 있을 때 BookService의 생성자만 만들어주면 스프링 IoC 컨테이너가 BookRepository에 의존성 주입을 알아서 주입해줌.**(스프링 4.3 이후부터는 생성자가 하나인 경우는 @Autowired를 사용하지 않아도 된다)**
 - 하지만 스프링이없이 직접  new연산자로 주입하면 IoC가 가능하다
 
-[스프링 IoC컨테이너란?]
+[스프링 IoC컨테이너란?](https://github.com/outlastudy/2022-weekly-study/blob/%EC%B0%BD%EC%9A%A9/%EC%B0%BD%EC%9A%A9/spring%20DI/spring%20IoC%20container.md)
 
 ## 의존성 주입을 사용하는 이유(장점)
 
