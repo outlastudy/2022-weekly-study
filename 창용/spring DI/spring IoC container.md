@@ -20,7 +20,7 @@
 ### 클래스 호출 방식
 
 - 클래스내에 선언과 구현이 같이 있기 때문에 다양한 형태로 변화가 불가능하다.
-![Untitled](https://user-images.githubusercontent.com/51350374/163902830-d6aa6799-d628-46bb-9633-47caead689bf.png)
+<img src="https://user-images.githubusercontent.com/51350374/163902830-d6aa6799-d628-46bb-9633-47caead689bf.png" width="400" height="100"/>
 
 ### 인터페이스 호출 방식
 
@@ -30,7 +30,7 @@
     
     → 그러나 구현클래스 교체시 호출 클래스의 코드 수정이 필요(부분종속)
 
-    ![Untitled 1](https://user-images.githubusercontent.com/51350374/163902841-1291606f-3e43-42c5-8f8e-22b846ae9013.png)
+    <img src="https://user-images.githubusercontent.com/51350374/163902841-1291606f-3e43-42c5-8f8e-22b846ae9013.png" width="450" height="250"/>
     
 
 ### 팩토리 호출 방식
@@ -40,7 +40,7 @@
     
     → 그러나 호출클래스에서 팩토리를 호출하는 코드가 들어가야 하는 것 또한 팩토리에 의존함을 의미
 
-    ![Untitled 2](https://user-images.githubusercontent.com/51350374/163902865-544c8626-51a6-4c48-88c0-6e595f35046f.png)
+    <img src="https://user-images.githubusercontent.com/51350374/163902865-544c8626-51a6-4c48-88c0-6e595f35046f.png" width="450" height="250"/>
     
     ### IoC
     
@@ -48,7 +48,7 @@
         
         →즉, **의존성이 삽입된다는 의미로 IoC를 DI라는 표현으로 사용한다.**
     
-        ![Untitled 3](https://user-images.githubusercontent.com/51350374/163902872-72e89884-3fc8-4fcd-8b38-57b502881f58.png)
+        <img src="https://user-images.githubusercontent.com/51350374/163902872-72e89884-3fc8-4fcd-8b38-57b502881f58.png" width="450" height="250"/>
         
 
 ## Container 정리
@@ -61,4 +61,4 @@
 
 ⇒ 의존성 제어, 즉 객체 간의 의존성을 낮추기 위해 Spring IoC 컨테이너가 사용된다.
 
-![Untitled 4](https://user-images.githubusercontent.com/51350374/163902881-fa971d72-8f95-48e5-a851-960ff1278311.png)
+<img src="https://user-images.githubusercontent.com/51350374/163902881-fa971d72-8f95-48e5-a851-960ff1278311.png" width="400" height="300"/>
