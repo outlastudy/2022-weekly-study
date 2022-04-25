@@ -107,4 +107,62 @@ User user = new User.Builder(20, 99999)
 해당 클래스는 불변이고, 모든 세터 메서드 들은 빌더 자신을 반환하기 때문에 연쇄적으로 호출이 가능하게 된다. 이를 fluent API 또는 method chaining이라고 한다.
 
 ### 빌더 패턴은 계층적으로 설계된 클래스와 함께 쓰기에 좋다.
---> 다음주에 계속...
+각 계층의 클래스에 관련 빌더를 멤버로 정의하여 계층적으로 설계 할 수 있다.
+추상 클래스는 추상 빌더로, 구체 클래스는 구체 빌더를 갖게 된다.
+
+``` java
+public abstract class Pizza {
+    public enum Topping {HAM, MUSHROOM, ONION, SAUSAGE}
+    final Set<Topping> toppings;
+
+    abstract static class Builder<T extends Builder<T>> {
+        EnumSet<Topping> toppings = EnumSet.noneOf(Topping.class);
+        public T addTopping(Topping topping) {
+            toppings.add(Objects.requireNonNull(topping));
+            return self();
+        }
+
+        abstract Pizza build();
+
+        protected abstract T self();
+    }
+
+    Pizza(Builder<?> builder) {
+        toppings = builder.toppings.clone();
+    }
+}
+
+public class NyPizza extends Pizza {
+    public enum Size { SMALL, MEDIUM, LARGE }
+    private final Size size;
+
+    public static class Builder extends Pizza.Builder<Builder> {
+        private final Size size;
+
+        public Builder (Size size) {
+            this.size = Objects.requireNonNull(size);
+        }
+
+        @Override
+        public NyPizza build() {
+            return new NyPizza(this);
+        }
+
+        @Override
+        protected Builder self() {return this;}
+    }
+
+    private NyPizza(Builder builder) {
+        super(builder);
+        size = builder.size;
+    }
+}
+
+NyPizza pizza = new NyPizza.Builder(SMALL)
+        .addTopping(SAUSAGE).addTopping(ONION).build();
+```
+
+### 빌더 패턴의 단점
+객체를 만들려면 그에 앞서 빌더부터 만들어야 한다. 빌더 생성 비용은 크지는 않지만 성능에 민감한 프로젝트에서는 주의해서 사용해야한다고 한다.
+점층적 생성자 보다 코드가 장황해서 매개변수가 **4개 이상**은 되어야 값어치를 한다고 한다.
+그래도 실무에서는 개발을 하다보면 매개변수가 점점 많아지는 경우가 많기 때문에 처음부터 빌더 패턴 적용을 고려해보는 것도 옳은 방법이라고 한다.
