@@ -117,8 +117,3 @@
                 - 리소스에 접근할 때 메소드가 허용되는지
             - Access-Control-Allow-Headers
                 - 어떤 헤더 필드 네임이 실제 요청에서 사용할 수 있는지 가리킨다.
-                
-
-[https://bohyeon-n.github.io/deploy/web/cors.html](https://bohyeon-n.github.io/deploy/web/cors.html)
-
-[https://brownbears.tistory.com/336](https://brownbears.tistory.com/336)
