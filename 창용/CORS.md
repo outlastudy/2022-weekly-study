@@ -131,3 +131,5 @@
         - preflight요청에 대한 대한 응답으로 허용되는 메서드들을 나타냄.
     - **Access-Control-Allow-Headers**
         - preflight요청에 대한 대한 응답으로 실제 요청 시 사용할 수 있는 HTTP 헤더를 나타냄.
+
+[CORS 에러 해결하기](https://github.com/outlastudy/2022-weekly-study/blob/%EC%B0%BD%EC%9A%A9/%EC%B0%BD%EC%9A%A9/CORS%20%EC%97%90%EB%9F%AC%20%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0.md)
