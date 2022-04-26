@@ -31,9 +31,7 @@
 - **CORS 동작 원리**
     - 동일 출처 정책은 브라우저에서 임의로 하는 것.
     - 브라우저를 통하지 않고 요청을 보내거나 브라우저에서 동일 출처 정책이 아니라면 동일 출처가 아니라도 요청을 보내고 응답을 받을 수 있다.
-        - 즉 ,
-            
-            브라우저가 리소스를 요청할 때 추가적인 헤더에 정보를 담는다. 내 origin은 무엇이고 어떤 메소드를 사용해서 요청을 할 것이고 어떤 헤더들을 포함할 것인지를 담아서 서버에 전송.서버는 서버가 응답할 수 있는 origin들을 헤더에 담아서 브라우저에게 보냄. 브라우저가 이 헤더를 보고 해당 origin에서 요청할 수 있다면 리소스 전송을 허용하고 만약 불가능하다면 에러를 발생시킴.
+        - 즉, 브라우저가 리소스를 요청할 때 추가적인 헤더에 정보를 담는다. 내 origin은 무엇이고 어떤 메소드를 사용해서 요청을 할 것이고 어떤 헤더들을 포함할 것인지를 담아서 서버에 전송.서버는 서버가 응답할 수 있는 origin들을 헤더에 담아서 브라우저에게 보냄. 브라우저가 이 헤더를 보고 해당 origin에서 요청할 수 있다면 리소스 전송을 허용하고 만약 불가능하다면 에러를 발생시킴.
             
     - 브라우저가 다른 출처로 요청을 보낼 때 절차
         - **Simple request**
@@ -62,14 +60,13 @@
                     ```
                     
                 - **Origin**
-                    
-                    ![Untitled](CORS%20a116a4a4348744dd9379fd5724dc21ca/Untitled.png)
+                    ![Untitled](https://user-images.githubusercontent.com/51350374/165196751-94cb4e0a-d884-477f-81c7-601916227e35.png)
                     
                     - Origin은 Protocol과 Host, 그리고 포트번호까지 모두 합친 것.
                         
                         → 즉, 서버의 위치를 찾아가기 위해 필요한 가장 기본적인 것들을 합쳐놓은 것.
                         
-                1. 서버에서 Origin 리퀘스트 헤더를 확인. Origin값이 허용되면 Access-Control-Allow-Origin 요청 헤더 Origin값으로 설정
+                3. 서버에서 Origin 리퀘스트 헤더를 확인. Origin값이 허용되면 Access-Control-Allow-Origin 요청 헤더 Origin값으로 설정
                     
                     ```jsx
                     Http/1.1 200 OK
@@ -77,7 +74,7 @@
                     Content-Type: application/json
                     ```
                     
-                2. 응답을 받은 브라우저는 Access-Control-Allow-Origin 헤더가 탭의 출처와 일치하는지 확인.
+                4. 응답을 받은 브라우저는 Access-Control-Allow-Origin 헤더가 탭의 출처와 일치하는지 확인.
                 값이 일치하거나 ‘*’ 와일드 카드 연산자를 포함하는 경우가 통과
         - **Preflighted request**
             - Simple request와는 다른 유형의 CORS요청.
@@ -93,7 +90,7 @@
                 Access-Control-Request-Headers: Authorization, Content-Type
                 ```
                 
-                1. 서버는 허용된 메소드 및 헤더를 지정하여 응답한다.
+                2. 서버는 허용된 메소드 및 헤더를 지정하여 응답한다.
                 
                 ```jsx
                 HTTP/1.1 200 OK
@@ -103,7 +100,7 @@
                 Content-Type: application/json
                 ```
                 
-                1. 헤더와 메소드가 통과되면, 브라우저는 원래 CORS요청을 보낸다.
+                3. 헤더와 메소드가 통과되면, 브라우저는 원래 CORS요청을 보낸다.
                 
                 ```jsx
                 POST /products/ HTTP/1.1
@@ -113,7 +110,7 @@
                 Origin: https://www.domain.com
                 ```
                 
-                1. 응답은 Access-Control-Allow-Origin헤더에 올바른 출처가 있으므로 검사를 통과한다.
+                4. 응답은 Access-Control-Allow-Origin헤더에 올바른 출처가 있으므로 검사를 통과한다.
 - **요청 헤더 목록**
     - **Access-Control-Request-Method**
         - preflight요청을 할 때 실제 요청에서 어떤 메서드를 사용할 것인지 서버에게 알리기 위해 사용.
@@ -134,7 +131,3 @@
         - preflight요청에 대한 대한 응답으로 허용되는 메서드들을 나타냄.
     - **Access-Control-Allow-Headers**
         - preflight요청에 대한 대한 응답으로 실제 요청 시 사용할 수 있는 HTTP 헤더를 나타냄.
-
-[https://hannut91.github.io/blogs/infra/cors](https://hannut91.github.io/blogs/infra/cors)
-
-[https://bohyeon-n.github.io/deploy/web/cors.html](https://bohyeon-n.github.io/deploy/web/cors.html)
