@@ -9,8 +9,9 @@
 ### [PoiemaWeb](https://github.com/outlastudy/2022-weekly-study/tree/master/%EC%A7%80%ED%9B%88/PoiemaWeb)
 
 - HTML5
+
   1. HTML5 기본 문법 [[바로가기](PoiemaWeb/HTML5%20기본%20문법.md)]
-  2. 시멘틱 요소와 검색 엔진
+  2. 시멘틱 요소와 검색 엔진 [[바로가기](PoiemaWeb/시맨틱%20요소와%20검색%20엔진.md)]
   3. 웹페이지의 구성하는 기본태그
   4. 텍스트 관련 태그
   5. HTML의 핵심 개념인 Hyperlink
@@ -24,6 +25,8 @@
 - Javascript
 
 ### [TIL](https://github.com/outlastudy/2022-weekly-study/tree/master/%EC%A7%80%ED%9B%88/TIL)
- 
- - SSR 과 CSR [[바로가기](TIL/SSR%20과%20CSR.md)]
- - Rendering 과정
+
+- SSR 과 CSR [[바로가기](TIL/SSR%20과%20CSR.md)]
+- JavaScript
+  - var 변수의 문제점 [[바로가기](TIL/JavaScript/var%20변수의%20문제점.md)]
+  - 호이스팅 [[바로가기](<TIL/JavaScript/호이스팅(Hoisting).md>)]

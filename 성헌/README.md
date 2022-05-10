@@ -10,12 +10,18 @@
 
 - 생성(Creational)
 
-    - [ ] 싱글톤 패턴(Singleton)
-    - [ ] 추상 팩토리 패턴(Abstract Factory)
-    - [ ] 빌더 패턴(Builder)
-    - [ ] 팩토리 메서드 패턴(Factory Method)
-    - [ ] 원형 패턴(Prototype)
+    - [O] [싱글톤 패턴(Singleton)](https://github.com/outlastudy/2022-weekly-study/blob/master/%EC%84%B1%ED%97%8C/Design_Pattern/Creational_Patterns/Singleton.md)
+
+    - [O] [추상팩토리 패턴(Abstract Factory)](https://github.com/outlastudy/2022-weekly-study/blob/master/%EC%84%B1%ED%97%8C/Design_Pattern/Creational_Patterns/Abstract_Factory.md)
+
+    - [O] [빌더 패턴(Builder)](https://github.com/outlastudy/2022-weekly-study/blob/master/%EC%84%B1%ED%97%8C/Design_Pattern/Creational_Patterns/Builder.md)
+
+    - [O] [팩토리 메서드 패턴(Factory Method)](https://github.com/outlastudy/2022-weekly-study/blob/master/%EC%84%B1%ED%97%8C/Design_Pattern/Creational_Patterns/Factory_Method.md)
+
+    - [O] [원형 패턴(Prototype)](https://github.com/outlastudy/2022-weekly-study/blob/master/%EC%84%B1%ED%97%8C/Design_Pattern/Creational_Patterns/Prototype.md)
 
 - 구조(Structural)
+
+    - [O]
 
 - 행위(Behavioral)
