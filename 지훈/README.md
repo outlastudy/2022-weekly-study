@@ -30,3 +30,7 @@
 - JavaScript
   - var 변수의 문제점 [[바로가기](TIL/JavaScript/var%20변수의%20문제점.md)]
   - 호이스팅 [[바로가기](<TIL/JavaScript/호이스팅(Hoisting).md>)]
+
+### ETC
+
+- LocalStorage, SessionStorage, Cookie의 차이점 [바로가기](https://velog.io/@ejchaid/localstorage-sessionstorage-cookie%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90)
