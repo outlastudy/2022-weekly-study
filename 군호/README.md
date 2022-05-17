@@ -7,6 +7,16 @@
 
 - [JPA](java/JPA.md)    
 
+<br>
 
 # **DB**
-- [INDEX 작동원리](DB/INDEX.md)
+- [INDEX 작동원리](DB/INDEX.md) 
+
+<br>
+
+### **분산처리**
+- [Replication](DB/Replication.md) : 데이터베이스 복제
+
+- [Partitioning](DB/Partitioning.md) : 데이터베이스 분할
+
+- [Sharding](DB/Sharding.md) : 데이터베이스 분할의 일종?
