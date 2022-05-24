@@ -20,3 +20,9 @@
 - [Partitioning](DB/Partitioning.md) : 데이터베이스 분할
 
 - [Sharding](DB/Sharding.md) : 데이터베이스 분할의 일종?
+
+<br>
+
+# **Cache**
+- [CDN](Cache/CDN.md) : 콘텐츠 전송 네트워크
+- [Caching_Strategies](Cache/Caching_Strategies.md) : 캐싱전략
