@@ -60,7 +60,7 @@
                     ```
                     
                 - **Origin**
-                    ![Untitled](https://user-images.githubusercontent.com/51350374/165196751-94cb4e0a-d884-477f-81c7-601916227e35.png)
+                  <img src="asset/1.png"/>
                     
                     - Origin은 Protocol과 Host, 그리고 포트번호까지 모두 합친 것.
                         
