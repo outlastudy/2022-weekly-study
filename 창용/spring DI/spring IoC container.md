@@ -20,7 +20,7 @@
 ### 클래스 호출 방식
 
 - 클래스내에 선언과 구현이 같이 있기 때문에 다양한 형태로 변화가 불가능하다.
-<img src="https://user-images.githubusercontent.com/51350374/163902830-d6aa6799-d628-46bb-9633-47caead689bf.png" width="400" height="100"/>
+<img src="asset/2.png" width="400" height="100"/>
 
 ### 인터페이스 호출 방식
 
@@ -29,8 +29,7 @@
     → 구현클래스 교체가 용이하여 다양한 변화가 가능
     
     → 그러나 구현클래스 교체시 호출 클래스의 코드 수정이 필요(부분종속)
-
-    <img src="https://user-images.githubusercontent.com/51350374/163902841-1291606f-3e43-42c5-8f8e-22b846ae9013.png" width="450" height="250"/>
+    <img src="asset/3.png" width="450" height="250"/>
     
 
 ### 팩토리 호출 방식
@@ -39,16 +38,14 @@
 - 구현클래스 변경시 팩토리만 수정하면 되기 때문에 호출클래스에는 영향을 미치지 않는다
     
     → 그러나 호출클래스에서 팩토리를 호출하는 코드가 들어가야 하는 것 또한 팩토리에 의존함을 의미
-
-    <img src="https://user-images.githubusercontent.com/51350374/163902865-544c8626-51a6-4c48-88c0-6e595f35046f.png" width="450" height="250"/>
+    <img src="asset/4.png" width="450" height="250"/>
     
     ### IoC
     
     - 팩토리 패턴의 장점을 더해 어떠한 것에도 의존하지 않는 형태가 되었다. 실행시점에 클래스간의 관계가 형성이 된다.
         
         →즉, **의존성이 삽입된다는 의미로 IoC를 DI라는 표현으로 사용한다.**
-    
-        <img src="https://user-images.githubusercontent.com/51350374/163902872-72e89884-3fc8-4fcd-8b38-57b502881f58.png" width="450" height="250"/>
+        <img src="asset/5.png" width="450" height="250"/>
         
 
 ## Container 정리
@@ -60,5 +57,4 @@
 - 서로 참조하고 있는 정도가 심할 수록 의존성이 높다고 표현한다. 낮은 결합도와 높은 캡슐화로 대변되는 OOP에서 높은 의존성은 매우 지양된다.
 
 ⇒ 의존성 제어, 즉 객체 간의 의존성을 낮추기 위해 Spring IoC 컨테이너가 사용된다.
-
-<img src="https://user-images.githubusercontent.com/51350374/163902881-fa971d72-8f95-48e5-a851-960ff1278311.png" width="400" height="300"/>
+<img src="asset/6.png" width="400" height="300"/>

@@ -4,7 +4,7 @@
 
 스프링의 기반이 되는 설계 개념을 표현한 것.
 
-<img src="https://user-images.githubusercontent.com/51350374/163903321-b0650e7c-4d52-483b-8524-0cb28bd64f31.png" width="250" height="200"/>
+<img src="asset/1.png" width="250" height="200"/>
 스프링이란 IoC와 AOP를 지원하는 경량의 컨테이너 프레임워크이다.
 
 **DI(Dependency Injection)**
