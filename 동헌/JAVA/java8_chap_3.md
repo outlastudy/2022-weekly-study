@@ -8,7 +8,7 @@ Function<Integer, Integer> plus10 = (i) -> i + 10;
     - 인자가 없을때 : ()
     - 인자가 한개일 때 : (one) or one
     - 인자가 여러개 일때 : (one, two)
-    - 이자의 타입은 생략 가능, 컴파일러가 추론 하지만 명시할 수도 있다.
+    - 인자의 타입은 생략 가능, 컴파일러가 추론 하지만 명시할 수도 있다.
       - (Integer one, String two)
 
   - 바디
